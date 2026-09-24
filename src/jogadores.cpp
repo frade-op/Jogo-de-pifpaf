@@ -13,12 +13,12 @@ int jogador1(){
 	system("cls");
 	printf("Jogador 1, e apenas o jogador 1, preste atencao a tela!\n");
 	system("PAUSE>>null");
-	for(i=0, numero=0, naipe=0; i<9; i++){//distribui as cartas na mão	
+	for(i=0, numero=0, naipe=0; i<9; i++){//distribui as cartas na mï¿½o	
 		novamente:
-		numero=(rand() % 13);//carta aleatória de 1 a 13
-		mao1[i]=numero+1;//aloca o numero na posição da carta
-		naipe=(rand() % 4);//naipe aleatório de 1 a 4
-		naipe1[i]=naipe+1;//aloca o naipe na posição da carta
+		numero=(rand() % 13);//carta aleatï¿½ria de 1 a 13
+		mao1[i]=numero+1;//aloca o numero na posiï¿½ï¿½o da carta
+		naipe=(rand() % NAIPES);//naipe aleatï¿½rio de 1 a 4
+		naipe1[i]=naipe+1;//aloca o naipe na posiï¿½ï¿½o da carta
 		baralho[numero]++;//informa o numero de cada carta
 		
 		if(identifica[numero][naipe]<1){
@@ -29,8 +29,8 @@ int jogador1(){
 }
 
 int apresenta1(){
-	for(i=0; i<9; i++){//apresenta a mão do jogador
-		printf("%ia posicao - ", i+1);//posião
+	for(i=0; i<9; i++){//apresenta a mï¿½o do jogador
+		printf("%ia posicao - ", i+1);//posiï¿½o
 		if((mao1[i]>1)&&(mao1[i]<11)){printf("%i de ", mao1[i]);}//numero
 		else{
 			switch(mao1[i]){
@@ -71,12 +71,12 @@ int jogador2(){
 	system("cls");
 	printf("Jogador 2, e apenas o jogador 2, preste atencao a tela!\n");
 	system("PAUSE>>null");
-	for(i=0, numero2=0, naipe5=0; i<9; i++){//distribui as cartas na mão
+	for(i=0, numero2=0, naipe5=0; i<9; i++){//distribui as cartas na mï¿½o
 		novamente2:
-		numero2=(rand() % 13);//carta aleatória de 1 a 13
-		mao2[i]=numero2+1;//aloca o numero na posição da carta
-		naipe5=(rand() % 4);//naipe aleatório de 1 a 4
-		naipe2[i]=naipe5+1;//aloca o naipe na posição da carta
+		numero2=(rand() % 13);//carta aleatï¿½ria de 1 a 13
+		mao2[i]=numero2+1;//aloca o numero na posiï¿½ï¿½o da carta
+		naipe5=(rand() % NAIPES);//naipe aleatï¿½rio de 1 a 4
+		naipe2[i]=naipe5+1;//aloca o naipe na posiï¿½ï¿½o da carta
 		baralho[numero2]++;//informa o numero de cada carta
 		
 		if(identifica[numero2][naipe5]<1){
@@ -87,8 +87,8 @@ int jogador2(){
 }
 
 int apresenta2(){
-	for(i=0; i<9; i++){//apresenta a mão do jogador
-		printf("%ia posicao - ", i+1);//posião
+	for(i=0; i<9; i++){//apresenta a mï¿½o do jogador
+		printf("%ia posicao - ", i+1);//posiï¿½o
 		if((mao2[i]>1)&&(mao2[i]<11)){printf("%i de ", mao2[i]);}//numero
 		else{
 			switch(mao2[i]){
@@ -129,12 +129,12 @@ int jogador3(){
 	system("cls");
 	printf("Jogador 3, e apenas o jogador 3, preste atencao a tela!\n");
 	system("PAUSE>>null");
-	for(i=0, numero3=0, naipe6=0; i<9; i++){//distribui as cartas na mão
+	for(i=0, numero3=0, naipe6=0; i<9; i++){//distribui as cartas na mï¿½o
 		novamente3:
-		numero3=(rand() % 13);//carta aleatória de 1 a 13
-		mao3[i]=numero3+1;//aloca o numero na posição da carta
-		naipe6=(rand() % 4);//naipe aleatório de 1 a 4
-		naipe3[i]=naipe6+1;//aloca o naipe na posição da carta
+		numero3=(rand() % 13);//carta aleatï¿½ria de 1 a 13
+		mao3[i]=numero3+1;//aloca o numero na posiï¿½ï¿½o da carta
+		naipe6=(rand() % NAIPES);//naipe aleatï¿½rio de 1 a 4
+		naipe3[i]=naipe6+1;//aloca o naipe na posiï¿½ï¿½o da carta
 		baralho[numero3]++;//informa o numero de cada carta
 		
 		if(identifica[numero3][naipe6]<1){
@@ -144,8 +144,8 @@ int jogador3(){
 	apresenta3();
 }
 int apresenta3(){
-	for(i=0; i<9; i++){//apresenta a mão do jogador
-		printf("%ia posicao - ", i+1);//posião
+	for(i=0; i<9; i++){//apresenta a mï¿½o do jogador
+		printf("%ia posicao - ", i+1);//posiï¿½o
 		if((mao3[i]>1)&&(mao3[i]<11)){printf("%i de ", mao3[i]);}//numero
 		else{
 			switch(mao3[i]){
@@ -186,12 +186,12 @@ int jogador4(){
 	system("cls");
 	printf("Jogador 4, e apenas o jogador 4, preste atencao a tela!\n");
 	system("PAUSE>>null");
-	for(i=0, numero4=0, naipe7=0; i<9; i++){//distribui as cartas na mão
+	for(i=0, numero4=0, naipe7=0; i<9; i++){//distribui as cartas na mï¿½o
 		novamente4:
-		numero4=(rand() % 13);//carta aleatória de 1 a 13
-		mao4[i]=numero4+1;//aloca o numero na posição da carta
-		naipe7=(rand() % 4);//naipe aleatório de 1 a 4
-		naipe4[i]=naipe7+1;//aloca o naipe na posição da carta
+		numero4=(rand() % 13);//carta aleatï¿½ria de 1 a 13
+		mao4[i]=numero4+1;//aloca o numero na posiï¿½ï¿½o da carta
+		naipe7=(rand() % NAIPES);//naipe aleatï¿½rio de 1 a 4
+		naipe4[i]=naipe7+1;//aloca o naipe na posiï¿½ï¿½o da carta
 		baralho[numero4]++;//informa o numero de cada carta
 		
 		if(identifica[numero4][naipe7]<1){
@@ -201,8 +201,8 @@ int jogador4(){
 	apresenta4();
 }
 int apresenta4(){
-	for(i=0; i<9; i++){//apresenta a mão do jogador
-		printf("%ia posicao - ", i+1);//posião
+	for(i=0; i<9; i++){//apresenta a mï¿½o do jogador
+		printf("%ia posicao - ", i+1);//posiï¿½o
 		if((mao4[i]>1)&&(mao4[i]<11)){printf("%i de ", mao4[i]);}//numero
 		else{
 			switch(mao4[i]){

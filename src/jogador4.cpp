@@ -33,8 +33,8 @@ int mudar4(){
 int compar4(){
 	srand(time(NULL));
 	again:
-	novo=1+(rand() % 13);//compra a carta
-	naipe_novo=1+(rand() % 4);//naipe da carta nova
+	novo=1+(rand() % VALORES);//compra a carta
+	naipe_novo=1+(rand() % VALORES);//naipe da carta nova
 	
 	if(identifica[novo-1][naipe_novo-1]<2){
 		identifica[novo-1][naipe_novo-1]+=1;

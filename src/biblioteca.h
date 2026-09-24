@@ -4,9 +4,14 @@
 #include <cstdio>
 
 /* variaveis globais compartilhadas entre os arquivos .cpp (definidas em principal.cpp) */
-extern int identifica[13][4];
+
+// constantes
+constexpr int VALORES = 13;
+constexpr int NAIPES = 4;
+
+extern int identifica[VALORES][NAIPES];
 extern int x, y;
-extern int baralho[13];
+extern int baralho[VALORES];
 extern int mao1[9], mao2[9], mao3[9], mao4[9];
 extern int i, j, numero, numero2, numero3, numero4;
 extern int naipe1[9], naipe2[9], naipe3[9], naipe4[9];
