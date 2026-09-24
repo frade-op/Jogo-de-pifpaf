@@ -5,23 +5,22 @@
 
 /* pif paf simulator */
 
-	int identifica[13][4]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-	//int repetido[13][4]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-	int x, y;
-	int baralho[13]={0,0,0,0,0,0,0,0,0,0,0,0,0};//numero de cartas de cada numero
-	int mao1[9], mao2[9], mao3[9], mao4[9], i, j, numero=0, numero2=0, numero3=0, numero4=0;//m�os e contadores
-	int naipe1[9], naipe2[9], naipe3[9], naipe4[9], naipe=0, naipe5=0, naipe6=0, naipe7=0;//naipes e contadores
-	int sair=0, nova_posicao=0, posicao=0, novo=0, naipe_novo=0, modo=0, jogadores=0, partida=0, jogada=0, jogadas=0, ganha=0;//fun��es do jogo
-	int total, b1=0, b2=0, simnao=0, naipe_lixo=0, lixo=0, cartas_lixo=0, cartateste=0, naipeteste=0;
-	int alt=0, alt1=0, alt2=0, alt3=0, alt4=0;
-	
-	int jogador1();
-	int jogador2();
-	int jogador3();
-	int jogador4();
-	int menu();
+int identifica[13][4]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+//int repetido[13][4]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+int x, y;
+int baralho[13]={0,0,0,0,0,0,0,0,0,0,0,0,0};//numero de cartas de cada numero
+int mao1[9], mao2[9], mao3[9], mao4[9], i, j, numero=0, numero2=0, numero3=0, numero4=0;//m�os e contadores
+int naipe1[9], naipe2[9], naipe3[9], naipe4[9], naipe=0, naipe5=0, naipe6=0, naipe7=0;//naipes e contadores
+int sair=0, nova_posicao=0, posicao=0, novo=0, naipe_novo=0, modo=0, jogadores=0, partida=0, jogada=0, jogadas=0, ganha=0;//fun��es do jogo
+int total, b1=0, b2=0, simnao=0, naipe_lixo=0, lixo=0, cartas_lixo=0, cartateste=0, naipeteste=0;
+int alt=0, alt1=0, alt2=0, alt3=0, alt4=0;
 
-	
+void jogador1();
+void jogador2();
+void jogador3();
+void jogador4();
+void menu();
+
 int main(){
 	printf("%i", 1%2);
 	srand(time(NULL));

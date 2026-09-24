@@ -3,7 +3,7 @@
 #include <time.h>
 #include "biblioteca.h"
 
-int opcao(){
+void opcao(){
 	printf("\n1-mudar a posicao da carta\n2-comprar\n3-comprar do monte ");
 	if(cartas_lixo>0){
 		if((lixo>1)&&(lixo<11)){printf("(%i de ", lixo);}//numero

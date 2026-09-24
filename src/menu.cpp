@@ -3,35 +3,35 @@
 #include <time.h>
 #include "biblioteca.h"
 	
-int mudar1();
-int compar1();
-int monte1();
-int mostrar1();
-int mudar2();
-int compar2();
-int monte2();
-int mostrar2();
-int mudar3();
-int compar3();
-int monte3();
-int mostrar3();
-int mudar4();
-int compar4();
-int monte4();
-int mostrar4();
-int apresenta1();
-int apresenta2();
-int apresenta3();
-int apresenta4();
-int opcao();
+void mudar1();
+void compar1();
+void monte1();
+void mostrar1();
+void mudar2();
+void compar2();
+void monte2();
+void mostrar2();
+void mudar3();
+void compar3();
+void monte3();
+void mostrar3();
+void mudar4();
+void compar4();
+void monte4();
+void mostrar4();
+void apresenta1();
+void apresenta2();
+void apresenta3();
+void apresenta4();
+void opcao();
 
-int menu(){
+void menu(){
 	system("cls");
 	printf("Vamos comecar o jogo!\n");
 	system("PAUSE>>null");
 	switch(jogadores){
 		case 2:
-			for(jogada=0, partida=0, sair=0; jogadas<104; jogadas++){//a jogada so termina quando é o outro jogador
+			for(jogada=0, partida=0, sair=0; jogadas<104; jogadas++){//a jogada so termina quando ï¿½ o outro jogador
 				mudar:
 				switch(jogada){
 					case 0:
@@ -107,7 +107,7 @@ int menu(){
 			}
 		break;
 		case 3:
-			for(jogada=0, partida=0; jogada<104; jogadas++){//a jogada so termina quando é o outro jogador
+			for(jogada=0, partida=0; jogada<104; jogadas++){//a jogada so termina quando ï¿½ o outro jogador
 				mudar2:
 				switch(jogada){
 					case 0:
@@ -209,11 +209,11 @@ int menu(){
 				else{jogada=0;}
 				if((sair!=0)||(ganha>0)){goto sair;}
 				system("PAUSE>>null");
-				system("cls");	
+				system("cls");
 			}
 		break;
 		case 4:
-			for(jogada=0, partida=0; jogada<104; jogadas++){//a jogada so termina quando é o outro jogador
+			for(jogada=0, partida=0; jogada<104; jogadas++){//a jogada so termina quando ï¿½ o outro jogador
 				mudar3:
 				switch(jogada){
 					case 0:
@@ -345,7 +345,7 @@ int menu(){
 				else{jogada=0;}
 				if((sair!=0)||(ganha>0)){goto sair;}
 				system("PAUSE>>null");
-				system("cls");	
+				system("cls");
 			}
 		break;
 	}

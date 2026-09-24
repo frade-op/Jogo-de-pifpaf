@@ -21,37 +21,37 @@ extern int total, b1, b2, simnao, naipe_lixo, lixo, cartas_lixo, cartateste, nai
 extern int alt, alt1, alt2, alt3, alt4;
 
 /* prototipos das funcoes compartilhadas entre os arquivos .cpp */
-int jogador1();
-int jogador2();
-int jogador3();
-int jogador4();
+void jogador1();
+void jogador2();
+void jogador3();
+void jogador4();
 
-int apresenta1();
-int apresenta2();
-int apresenta3();
-int apresenta4();
+void apresenta1();
+void apresenta2();
+void apresenta3();
+void apresenta4();
 
-int mudar1();
-int mudar2();
-int mudar3();
-int mudar4();
+void mudar1();
+void mudar2();
+void mudar3();
+void mudar4();
 
-int compar1();
-int compar2();
-int compar3();
-int compar4();
+void compar1();
+void compar2();
+void compar3();
+void compar4();
 
-int monte1();
-int monte2();
-int monte3();
-int monte4();
+void monte1();
+void monte2();
+void monte3();
+void monte4();
 
-int mostrar1();
-int mostrar2();
-int mostrar3();
-int mostrar4();
+void mostrar1();
+void mostrar2();
+void mostrar3();
+void mostrar4();
 
-int menu();
-int opcao();
+void menu();
+void opcao();
 
 #endif

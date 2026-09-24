@@ -3,9 +3,9 @@
 #include <time.h>
 #include "biblioteca.h"
 
-int apresenta3();
+void apresenta3();
 
-int mudar3(){
+void mudar3(){
 	while((posicao<1)||(posicao>9)){
 		printf("\nDigite qual a posicao da carta que deseja mudar.\n");
 		scanf("%i", &posicao);
@@ -30,7 +30,8 @@ int mudar3(){
 	posicao=0;
 	nova_posicao=0;
 }
-int compar3(){
+
+void compar3(){
 	srand(time(NULL));
 	again:
 	novo=1+(rand() % VALORES);//compra a carta
@@ -99,7 +100,8 @@ int compar3(){
 	posicao=0;
 	simnao=0;
 }
-int monte3(){
+
+void monte3(){
 	printf("\nAonde deseja coloca-la?\n");//aonde
 	scanf("%i", &posicao);
 	novo=mao3[posicao-1];//tira a carta da m�o
@@ -110,7 +112,8 @@ int monte3(){
 	naipe_lixo=naipe_novo;//joga a antiga no lixo
 	apresenta3();
 }
-int mostrar3(){
+
+void mostrar3(){
 	apresenta3();
 	printf("\nOs demais jogadores comfirmam sua vitoria?\n1-sim\n2-nao\n");
 	simnao=0;

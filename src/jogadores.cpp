@@ -3,12 +3,12 @@
 #include <time.h>
 #include "biblioteca.h"
 
-int apresenta1();
-int apresenta2();
-int apresenta3();
-int apresenta4();
+void apresenta1();
+void apresenta2();
+void apresenta3();
+void apresenta4();
 
-int jogador1(){
+void jogador1(){
 	system("PAUSE>>null");
 	system("cls");
 	printf("Jogador 1, e apenas o jogador 1, preste atencao a tela!\n");
@@ -28,7 +28,7 @@ int jogador1(){
 	apresenta1();
 }
 
-int apresenta1(){
+void apresenta1(){
 	for(i=0; i<9; i++){//apresenta a m�o do jogador
 		printf("%ia posicao - ", i+1);//posi�o
 		if((mao1[i]>1)&&(mao1[i]<11)){printf("%i de ", mao1[i]);}//numero
@@ -66,7 +66,7 @@ int apresenta1(){
 	system("PAUSE>>null");
 }
 
-int jogador2(){
+void jogador2(){
 	jogadores=2;
 	system("cls");
 	printf("Jogador 2, e apenas o jogador 2, preste atencao a tela!\n");
@@ -86,7 +86,7 @@ int jogador2(){
 	apresenta2();
 }
 
-int apresenta2(){
+void apresenta2(){
 	for(i=0; i<9; i++){//apresenta a m�o do jogador
 		printf("%ia posicao - ", i+1);//posi�o
 		if((mao2[i]>1)&&(mao2[i]<11)){printf("%i de ", mao2[i]);}//numero
@@ -124,7 +124,7 @@ int apresenta2(){
 	system("PAUSE>>null");
 }
 
-int jogador3(){
+void jogador3(){
 	jogadores=3;
 	system("cls");
 	printf("Jogador 3, e apenas o jogador 3, preste atencao a tela!\n");
@@ -143,7 +143,8 @@ int jogador3(){
 	}
 	apresenta3();
 }
-int apresenta3(){
+
+void apresenta3(){
 	for(i=0; i<9; i++){//apresenta a m�o do jogador
 		printf("%ia posicao - ", i+1);//posi�o
 		if((mao3[i]>1)&&(mao3[i]<11)){printf("%i de ", mao3[i]);}//numero
@@ -181,7 +182,7 @@ int apresenta3(){
 	system("PAUSE>>null");
 }
 
-int jogador4(){
+void jogador4(){
 	jogadores=4;
 	system("cls");
 	printf("Jogador 4, e apenas o jogador 4, preste atencao a tela!\n");
@@ -200,7 +201,8 @@ int jogador4(){
 	}
 	apresenta4();
 }
-int apresenta4(){
+
+void apresenta4(){
 	for(i=0; i<9; i++){//apresenta a m�o do jogador
 		printf("%ia posicao - ", i+1);//posi�o
 		if((mao4[i]>1)&&(mao4[i]<11)){printf("%i de ", mao4[i]);}//numero
