@@ -53,5 +53,6 @@ void mostrar4();
 
 void menu();
 void opcao();
+void limparTela();
 
 #endif

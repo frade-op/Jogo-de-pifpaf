@@ -23,10 +23,11 @@ void apresenta1();
 void apresenta2();
 void apresenta3();
 void apresenta4();
+void limparTela();
 void opcao();
 
 void menu(){
-	system("cls");
+	limparTela();
 	printf("Vamos comecar o jogo!\n");
 	system("PAUSE>>null");
 	switch(jogadores){
@@ -103,7 +104,7 @@ void menu(){
 				else{jogada=0;}
 				if((sair!=0)||(ganha>0)){goto sair;}
 				system("PAUSE>>null");
-				system("cls");
+				limparTela();
 			}
 		break;
 		case 3:
@@ -209,7 +210,7 @@ void menu(){
 				else{jogada=0;}
 				if((sair!=0)||(ganha>0)){goto sair;}
 				system("PAUSE>>null");
-				system("cls");
+				limparTela();
 			}
 		break;
 		case 4:
@@ -345,7 +346,7 @@ void menu(){
 				else{jogada=0;}
 				if((sair!=0)||(ganha>0)){goto sair;}
 				system("PAUSE>>null");
-				system("cls");
+				limparTela();
 			}
 		break;
 	}

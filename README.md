@@ -24,6 +24,7 @@ src/            Código-fonte do jogo
   jogador4.cpp      Ações do jogador 4
   menu.cpp          Loop principal de turnos/jogadas
   opcao.cpp         Impressão do menu de opções durante a jogada
+  scripts.cpp       Funções auxiliares, incluindo a limpeza da tela
   biblioteca.h      Declarações compartilhadas (variáveis globais e protótipos)
 tests/
   teste_jogo.cpp    Exemplo/teste automatizado de uma distribuição de cartas
@@ -38,7 +39,7 @@ no Windows, ou `g++` no Linux/macOS).
 No VS Code, use a tarefa de build padrão (`Ctrl+Shift+B`) ou rode manualmente:
 
 ```powershell
-g++ -std=gnu++17 src/principal.cpp src/jogador1.cpp src/jogador2.cpp src/jogador3.cpp src/jogador4.cpp src/jogadores.cpp src/menu.cpp src/opcao.cpp -o pifpaf.exe
+g++ -std=gnu++17 src/principal.cpp src/jogador1.cpp src/jogador2.cpp src/jogador3.cpp src/jogador4.cpp src/jogadores.cpp src/menu.cpp src/opcao.cpp src/scripts.cpp -o pifpaf.exe
 .\pifpaf.exe
 ```
 

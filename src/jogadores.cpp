@@ -7,10 +7,11 @@ void apresenta1();
 void apresenta2();
 void apresenta3();
 void apresenta4();
+void limparTela();
 
 void jogador1(){
 	system("PAUSE>>null");
-	system("cls");
+	limparTela();
 	printf("Jogador 1, e apenas o jogador 1, preste atencao a tela!\n");
 	system("PAUSE>>null");
 	for(i=0, numero=0, naipe=0; i<9; i++){//distribui as cartas na m�o	
@@ -68,7 +69,7 @@ void apresenta1(){
 
 void jogador2(){
 	jogadores=2;
-	system("cls");
+	limparTela();
 	printf("Jogador 2, e apenas o jogador 2, preste atencao a tela!\n");
 	system("PAUSE>>null");
 	for(i=0, numero2=0, naipe5=0; i<9; i++){//distribui as cartas na m�o
@@ -126,7 +127,7 @@ void apresenta2(){
 
 void jogador3(){
 	jogadores=3;
-	system("cls");
+	limparTela();
 	printf("Jogador 3, e apenas o jogador 3, preste atencao a tela!\n");
 	system("PAUSE>>null");
 	for(i=0, numero3=0, naipe6=0; i<9; i++){//distribui as cartas na m�o
@@ -184,7 +185,7 @@ void apresenta3(){
 
 void jogador4(){
 	jogadores=4;
-	system("cls");
+	limparTela();
 	printf("Jogador 4, e apenas o jogador 4, preste atencao a tela!\n");
 	system("PAUSE>>null");
 	for(i=0, numero4=0, naipe7=0; i<9; i++){//distribui as cartas na m�o
